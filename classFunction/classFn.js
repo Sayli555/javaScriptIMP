@@ -1,15 +1,15 @@
 // Before ES6 constructor function is declare like this 
-// function employee(name,state,city){
-//     this.name=name;
-//     this.state=state;
-//     this.city=city;
-// }
-// employee.prototype.getDetails=function(){
-//     console.log(`my name is ${this.name}, i am from ${this.city} ${this.state}`)
-// }
-// let e1=new employee("sayli","maharshtra","pune")
-// console.log(e1)
-// console.log(e1.getDetails())
+function employee(name,state,city){
+    this.name=name;
+    this.state=state;
+    this.city=city;
+}
+employee.prototype.getDetails=function(){
+    console.log(`my name is ${this.name}, i am from ${this.city} ${this.state}`)
+}
+let e1=new employee("sayli","maharshtra","pune")
+console.log(e1)
+console.log(e1.getDetails())
 
 // AFTER ES6
 class employee {
