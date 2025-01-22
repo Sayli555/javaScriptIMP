@@ -38,6 +38,10 @@ class student extends employee{
             this.work=work   
     }
 }
+
+
+
+
 let s1= new student("say","maha","mumbai","marathi","developer")
 console.log("s1",s1)
 
